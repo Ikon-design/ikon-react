@@ -1,0 +1,24 @@
+<svg id="Groupe_14" data-name="Groupe 14" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="87.399" height="25.174" viewBox="0 0 87.399 25.174">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.124" y1="0.147" x2="0.924" y2="1.09" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5d38e5"/>
+      <stop offset="1" stop-color="#af1371"/>
+    </linearGradient>
+  </defs>
+  <g id="Groupe_1" data-name="Groupe 1" transform="translate(0 0.028)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="5.447" height="25.141" fill="#fff"/>
+  </g>
+  <g id="Groupe_2" data-name="Groupe 2" transform="translate(10.933)">
+    <path id="Tracé_1" data-name="Tracé 1" d="M68.082,25.17H61.4l-7.044-9.905-.268-.377V25.174H48.64V.034h5.447V7.144l.587-.691L60.13,0h7.136L57.988,10.97Z" transform="translate(-48.64)" fill="#fff"/>
+  </g>
+  <g id="Groupe_3" data-name="Groupe 3" transform="translate(68.417 7.044)">
+    <path id="Tracé_2" data-name="Tracé 2" d="M323.367,40.89v8.577H317.92V40.89a4.043,4.043,0,0,0-8.087,0v8.577h-5.447V31.337h5.447v.972a9.491,9.491,0,0,1,13.534,8.581Z" transform="translate(-304.386 -31.337)" fill="#fff"/>
+  </g>
+  <circle id="Ellipse_1" data-name="Ellipse 1" cx="1.804" cy="1.804" r="1.804" transform="translate(61.317 21.565)" fill="#fff"/>
+  <g id="Groupe_4" data-name="Groupe 4" transform="translate(28.172 0.036)">
+    <path id="Tracé_3" data-name="Tracé 3" d="M137.83,25.284a12.564,12.564,0,1,1,12.427-10.307l4.732,10.307H137.83Zm6.68-9.767.259-.953a7.015,7.015,0,0,0,.244-1.842,7.115,7.115,0,1,0-7.169,7.115h8.65Z" transform="translate(-125.337 -0.16)" fill="url(#linear-gradient)"/>
+  </g>
+  <g id="Groupe_5" data-name="Groupe 5" transform="translate(36.912 8.775)">
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="3.823" cy="3.823" r="3.823" fill="#fff"/>
+  </g>
+</svg>

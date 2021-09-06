@@ -1,0 +1,18 @@
+.display-flex{
+    display: flex;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
+}
+
+.global-padding{
+    padding: 10px 18px;
+}
+
+.align-items-center{
+    align-items: center;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
