@@ -1,23 +1,29 @@
-import React from "react"
+import React, {useState} from "react"
 
 import "../style/reset.css"
 import "../style/main.css"
+import "../style/header.css"
 
-import Header from "../components/Header"
-import Welcome from "../components/welcome";
 import Projects from "../components/projects";
-import Form from "../components/form";
+import Layout from "../components/Layout";
+
+
+const lin = [
+    {
+        id: 1, link: "/projects", name: "projet"
+    }
+]
 
 const IndexPage = () => {
     return (
-        <main>
+        <main className="main">
             <title>Ikō.n</title>
-            <Header id='test' />
-            <Welcome />
-            <Projects />
-            <Form />
+            <Layout>
+                <Projects/>
+            </Layout>
         </main>
     )
 }
+
 
 export default IndexPage

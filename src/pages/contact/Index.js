@@ -1,6 +1,6 @@
 import React from "react";
 
-const Form = () => {
+const Contact = () => {
     return(
         <div>
             <h2>
@@ -16,4 +16,4 @@ const Form = () => {
     )
 }
 
-export default Form
+export default Contact

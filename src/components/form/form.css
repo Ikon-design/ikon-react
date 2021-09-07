@@ -1,0 +1,38 @@
+.form-container {
+    height: 100vh;
+    background-color: #3a3a3a;
+}
+
+.contact-input {
+    border-radius: 8px;
+    background-color: #2E2C2C;
+    font-family: "montserrat", serif;
+    color: #9B9B9B;
+    padding: 15px 0 15px 17px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .25);
+    border: 1px #3A3A3A solid;
+}
+
+.contact-input, .input-form-button {
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.contact-input-left {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 1;
+}
+
+.contact-input-right {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row: 1;
+}
+
+.input-button{
+    justify-self: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 4;
+}
