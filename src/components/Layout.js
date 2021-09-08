@@ -10,6 +10,7 @@ export default function Layout({children}) {
     const [mobileMenu, setMobileMenu] = useState(false)
     const [position, setPosition] = useState("-820px")
     const [screenSize, setScreenSize] = useState(document.body.offsetWidth)
+
     mobileMenu === false ? document.body.style.overflowY = "scroll" : document.body.style.overflowY = "hidden"
     return (
         <div>
@@ -76,7 +77,7 @@ const Header = (props) => {
     const right = props.screenSize < 820 ? <div style={{width: "15px"}}/> : <RightHeaderComponent/>
     return (
         <div
-            className="header-container display-flex justify-content-space-between align-items-center "
+            className="header-container display-flex justify-content-space-between align-items-center global-padding"
             style={{backgroundColor: headerColor, boxShadow: boxShadow, height: "75px"}}
         >
             {left}

@@ -4,15 +4,25 @@ import "./index.css"
 import {graphql, StaticQuery} from "gatsby";
 import Layout from "../../components/Layout";
 
+const test = window.location.pathname
+console.log(test)
+const query = graphql`query MyQuery($id: String) {
+    dataJson(projects: {elemMatch: {name: { eq: $id}}}) {
+        projects {
+            id
+        }
+    }
+}`
+
 const Projects = () => {
     return (
         <StaticQuery
-            query={graphql` query testQuery { dataJson { projects { ikon { name image {logo bgImg secondImage thirdImage} informations { projectDescription secondDescription}}} }}`}
-            render={data => <Content data={data?.dataJson?.projects?.ikon}/>}
+            query={query}
+            render={data => console.log(data)}
         />
     )
 }
-
+//<Content data={data?.dataJson?.projects?.ikon}/>
 const Content = (props) => {
     const style = {
         background: {
