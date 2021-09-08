@@ -2,6 +2,7 @@
     color: white;
     position: fixed;
     width: 100%;
+    transition: .360s;
 }
 
 .header-container ul{
@@ -10,4 +11,9 @@
 
 .header-container ul li a{
     text-transform: uppercase;
+}
+.right-header-component-indicator{
+    height: 2px;
+    width: available;
+    background-color: #5D38E5;
 }

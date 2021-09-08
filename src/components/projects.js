@@ -7,7 +7,7 @@ import Data from '../data/data.json'
 const Projects = () => {
     const data = Data.data.ikon.projects
     return(
-        <div className='container-projects'>
+        <div className='container-projects display-flex align-items-center justify-content-center'>
             <h2>Projets</h2>
             <div>
                 {data.map((data, index) =>{

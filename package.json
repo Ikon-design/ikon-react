@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^3.13.0",
     "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-sharp": "^3.13.0",
     "gatsby-source-filesystem": "^3.13.0",
     "gatsby-transformer-json": "^3.13.0",
