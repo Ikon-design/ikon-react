@@ -6,6 +6,7 @@ import "../style/header.css"
 
 import Projects from "../components/projects";
 import Layout from "../components/Layout";
+import Welcome from "../components/welcome";
 
 const IndexPage = () => {
     return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
             <title>Ikō.n || Accueil</title>
             <Layout>
                 <Projects/>
+                <Welcome />
             </Layout>
         </main>
     )

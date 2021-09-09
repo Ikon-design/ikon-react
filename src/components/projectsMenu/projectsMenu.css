@@ -1,0 +1,25 @@
+.project-menu-container{
+    transition: .75s;
+    width: fit-content;
+    background-color: #262626;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    display: grid;
+    column-gap: 25px;
+    opacity: 0;
+    row-gap: 15px;
+    padding: 25px;
+}
+.project-menu{
+    width: 200px;
+    background-color: #2E2E2E;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    grid-column: 2;
+    grid-row: 1;
+}
+.project-menu-image{
+    width: 100%;
+}
+.title-project-menu{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

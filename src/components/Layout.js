@@ -5,12 +5,13 @@ import RightHeaderComponent from "./rightHeaderComponent/RightHeaderComponent";
 import {Link} from "gatsby";
 import MobileMenu from "./mobileMenu/MobileMenu";
 import "../components/mobileMenu/mobileMenu.css"
+import ProjectsMenu from "./projectsMenu/ProjectsMenu";
 
 export default function Layout({children}) {
+    const [projectMenu, setProjectMenu] = useState("false")
     const [mobileMenu, setMobileMenu] = useState(false)
     const [position, setPosition] = useState("-820px")
     const [screenSize, setScreenSize] = useState(document.body.offsetWidth)
-
     mobileMenu === false ? document.body.style.overflowY = "scroll" : document.body.style.overflowY = "hidden"
     return (
         <div>
@@ -21,6 +22,8 @@ export default function Layout({children}) {
                 screenSize={screenSize}
                 setPosition={setPosition}
                 setScreenSize={setScreenSize}
+                projectMenu={projectMenu}
+                setProjectMenu={setProjectMenu}
             />
             {screenSize < 820 ? <MobileMenu
                     style={{left: position}}
@@ -29,7 +32,10 @@ export default function Layout({children}) {
                     position={position}
                     setPosition={setPosition}
                 /> :
-                null
+                <ProjectsMenu
+                    projectMenu={projectMenu}
+                    setProjectMenu={setProjectMenu}
+                />
             }
             {children}
         </div>
@@ -44,6 +50,7 @@ const Header = (props) => {
         props.setMobileMenu(!props.mobileMenu)
         props.setPosition("0px")
     }
+
     React.useEffect(() => {
         let isMounted = true;
         const changeScreenSize = () => {
@@ -74,7 +81,8 @@ const Header = (props) => {
         <Link to="../" className="display-flex justify-content-center align-items-center"><img src={Logo}
                                                                                                alt='Logo du site'/></Link>
     const center = props.screenSize < 820 ? <Link to="./"><img src={Logo} alt='Logo du site'/></Link> : null
-    const right = props.screenSize < 820 ? <div style={{width: "15px"}}/> : <RightHeaderComponent/>
+    const right = props.screenSize < 820 ? <div style={{width: "15px"}}/> :
+        <RightHeaderComponent projectMenu={props.projectMenu} setProjectMenu={props.setProjectMenu}/>
     return (
         <div
             className="header-container display-flex justify-content-space-between align-items-center global-padding"
