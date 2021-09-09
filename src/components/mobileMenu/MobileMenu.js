@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../images/headerLogo.svg"
 import ArrowLeft from "../../images/arrow-left.png"
-import ArrowRight from "../../images/arrow-right.png"
+import ArrowRight from "../../images/arrow-right.svg"
 import Divider from "../divider/Divider";
 import {graphql, Link, StaticQuery} from "gatsby";
 
@@ -68,9 +68,9 @@ const Content = (props) => {
             count++
         }
         return (
-            <Link className="project-menu-mobile border-radius" style={{gridRow: gridRow, gridColumn: gridColumn}}>
+            <Link key={x.name} className="project-menu-mobile border-radius" style={{gridRow: gridRow, gridColumn: gridColumn}}>
                 <div className="border-radius ">
-                    <img className="border-radius project-menu-mobile-img" src={x.images?.secondImage}/>
+                    <img className="border-radius project-menu-mobile-img" alt={"Image du projet " + x.name} src={x.images?.secondImage}/>
                     <h3 className="title-text project-menu-mobile-padding">{x.name}</h3>
                     <p  className="content-text project-menu-mobile-description project-menu-mobile-padding" style={{marginBottom: "15px"}}>{x.informations?.projectDescription}</p>
                 </div>
@@ -93,11 +93,11 @@ const Content = (props) => {
                 </li>
                 <Divider/>
                 <li className="display-flex flex-direction-column global-padding">
-                    <Link className="title-text" to={"/projects/" + 'ikon'}>Projets</Link>
+                    <Link className="title-text" to={"/projects/"}>Projets</Link>
                     <div className="display-grid" style={{marginTop: "15px"}}>
                         {projectMenuMobile}
                     </div>
-                    <Link className={"display-flex justify-content-center align-items-center input-button"} style={{ alignSelf: "flex-end", marginTop:'20px', marginBottom: '0px'}} to={"/"}>Voir plus <img src={ArrowRight}/></Link>
+                    <Link className={"display-flex justify-content-center align-items-center input-button"} style={{ alignSelf: "flex-end", marginTop:'20px', marginBottom: '0px', paddingRight: '10px'}} to={"/"}>Voir plus <img alt={"Fléche qui pointe à droite"} style={{marginLeft: "8.5px"}} src={ArrowRight}/></Link>
                 </li>
                 <Divider/>
                 <li className="global-padding">

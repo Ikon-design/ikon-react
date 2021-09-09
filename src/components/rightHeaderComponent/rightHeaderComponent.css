@@ -1,4 +1,13 @@
-.text-menu{
+.text-menu {
     margin-left: 20px;
     font-weight: bold;
+}
+
+.right-header-component-link {
+    transition: 260ms;
+}
+
+.right-header-component-link:hover {
+    color: #5D38E5;
+    text-shadow: 0 0 3px rgba(118, 86, 239, .31);
 }
