@@ -1,7 +1,7 @@
 import React, {useState} from "react"
-import "../components/mobileMenu/mobileMenu.css"
-import Header from "../components/header"
-import MobileMenu from "./mobileMenu";
+
+import "../mobileMenu/mobileMenu.css"
+import Header from "../header"
 
 export default function Layout({children}) {
     const [projectMenu, setProjectMenu] = useState("false")

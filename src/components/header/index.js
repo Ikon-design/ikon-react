@@ -1,12 +1,16 @@
 import React, {useState} from "react";
+import { Link } from "gatsby";
+
 import Menu from "../../images/menu.svg";
-import {Link} from "gatsby";
 import Logo from "../../images/headerLogo.svg";
-import RightHeaderComponent from "../rightHeaderComponent/RightHeaderComponent";
+
+import RightHeaderComponent from "../rightHeaderComponent";
 import MobileMenu from "../mobileMenu";
-import ProjectsMenu from "../projectsMenu/ProjectsMenu";
+import ProjectsMenu from "../projectsMenu";
+import {ProjectsData} from "../layout/graphQL";
 
 const Header = (props) => {
+    const data = ProjectsData()
     const [headerColor, setHeaderColor] = useState("unset")
     const [boxShadow, setBoxShadow] = useState("unset")
     const changeMobileMenu = () => {
@@ -60,7 +64,7 @@ const Header = (props) => {
                 {right}
             </div>
             {props.screenSize < 769 ?
-            <MobileMenu mobileMenu={props.mobileMenu} setMobileMenu={props.setMobileMenu} setPosition={props.setPosition} position={props.position}/> : <ProjectsMenu/>
+            <MobileMenu data={data} mobileMenu={props.mobileMenu} setMobileMenu={props.setMobileMenu} setPosition={props.setPosition} position={props.position}/> : <ProjectsMenu/>
             }
         </>
     )

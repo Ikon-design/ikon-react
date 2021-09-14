@@ -1,12 +1,10 @@
 import React from "react";
 import Logo from "../../images/headerLogo.svg"
 import ArrowLeft from "../../images/arrow-left.png"
-import Divider from "../divider/Divider";
+import Index from "../divider";
 import {Link} from "gatsby";
-import {Test} from "../header/graphQL";
 
 const MobileMenu = (props) => {
-    const data = Test().projects
     let count = 1
     let gridRow = 1
     let gridColumn = "1/3"
@@ -14,7 +12,7 @@ const MobileMenu = (props) => {
         props.setMobileMenu(!props.mobileMenu)
         props.setPosition("-830px")
     }
-    const projectMenuMobile = data.map(x => {
+    const projectMenuMobile = props.data.projects.map(x => {
         if (count % 2 !== 0) {
             gridColumn = "1/4"
             if (count <= 2) {
@@ -37,7 +35,7 @@ const MobileMenu = (props) => {
                   style={{gridRow: gridRow, gridColumn: gridColumn}}>
                 <div className="border-radius ">
                     <img className="border-radius project-menu-mobile-img" alt={"Image du projet " + x.name}
-                         src={x.images?.secondImage}/>
+                         src={x.images?.bgImg}/>
                     <h3 className="project-title-text project-menu-mobile-padding">{x.name}</h3>
                     <p className="content-text project-menu-mobile-description project-menu-mobile-padding"
                        style={{marginBottom: "15px"}}>{x.informations?.shortDescription}</p>
@@ -55,12 +53,12 @@ const MobileMenu = (props) => {
                 </button>
                 <img alt={"Logo ikon"} src={Logo}/>
             </div>
-            <Divider/>
+            <Index/>
             <ul>
                 <li className="global-padding">
                     <Link className="menu-text hover-menu" to={"./"}>Accueil</Link>
                 </li>
-                <Divider/>
+                <Index/>
                 <li className="display-flex flex-direction-column global-padding">
                     <Link className="menu-text hover-menu" to={"/projects"}>Projets</Link>
                     <div className="display-grid" style={{marginTop: "15px"}}>
@@ -71,11 +69,11 @@ const MobileMenu = (props) => {
                         style={{alignSelf: "flex-end", marginTop: '20px', marginBottom: '0px'}}
                         to={"./"}>Voir plus</Link>
                 </li>
-                <Divider/>
+                <Index/>
                 <li className="global-padding">
                     <Link to={"./"} className={"menu-text hover-menu"} value={"Nous contacter"}>Nous contacter</Link>
                 </li>
-                <Divider/>
+                <Index/>
             </ul>
         </div>
     )

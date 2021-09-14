@@ -1,4 +1,44 @@
-.container-projects{
+.container-projects {
     background-color: #2a2a2a;
     height: 100vh;
+}
+
+.little-text {
+    font-size: 3em;
+    z-index: 10;
+    letter-spacing: 4px;
+
+}
+
+.big-text {
+    font-family: "montserrat", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #252525;
+    font-size: 10em;
+    z-index: 2;
+}
+
+.content-project {
+    z-index: 3;
+    position: relative;
+    left: 8.5%;
+    width: fit-content;
+    height: 30%;
+}
+
+.content-project-image {
+    width: 60vw;
+    height: 100%;
+}
+
+.content-project-title {
+    height: fit-content;
+    left: 5%;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "montserrat", serif;
+    position: absolute;
+    bottom: 0;
 }

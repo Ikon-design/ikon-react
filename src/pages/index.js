@@ -4,8 +4,8 @@ import "../style/reset.css"
 import "../style/main.css"
 import "../style/header.css"
 
-import Projects from "../components/projects/projects";
-import Layout from "../components/Layout";
+import Index from "../components/projects";
+import Layout from "../components/layout";
 import Welcome from "../components/welcome";
 
 const IndexPage = () => {
@@ -13,9 +13,9 @@ const IndexPage = () => {
         <main className="main">
             <title>Ikō.n || Accueil</title>
             <Layout>
-                <Projects/>
+                <Index/>
                 <Welcome />
-                <Projects />
+                <Index />
             </Layout>
         </main>
     )

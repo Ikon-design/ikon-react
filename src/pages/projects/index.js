@@ -2,7 +2,7 @@ import React from "react";
 
 import "./index.css"
 import {graphql, StaticQuery} from "gatsby";
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout";
 
 const test = window.location.pathname
 console.log(test)
