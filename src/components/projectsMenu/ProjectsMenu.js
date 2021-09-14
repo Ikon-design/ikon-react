@@ -25,8 +25,13 @@ const ProjectsMenu = (props) => {
     return (
         <StaticQuery
             query={query}
-            children={data => <Content data={data}projectMenu={props.projectMenu}
-                                       setProjectMenu={props.setProjectMenu}/>}
+            children={data =>
+                <Content
+                    data={data}
+                    projectMenu={props.projectMenu}
+                    setProjectMenu={props.setProjectMenu}
+                />
+            }
         />
     )
 }
@@ -37,6 +42,7 @@ const Content = (props) => {
     let opacity = 0
     let right = '0px'
     let gridColumn = "1/1"
+
     const projectsMenu = data.map(x => {
         switch (count) {
             case 0:
@@ -54,7 +60,7 @@ const Content = (props) => {
         }
         count++
         return (
-            <Link key={x.name} to={x.link} style={{gridColumn: gridColumn}} className="project-menu border-radius">
+            <Link key={x.name} to={"./"} style={{gridColumn: gridColumn}} className="project-menu border-radius">
                 <img className="project-menu-image border-radius" alt={"Image du projet " + x.name}
                      src={x.images?.secondImage}/>
                 <h3 className="project-menu-mobile-padding title-text">{x.name}</h3>
@@ -63,17 +69,18 @@ const Content = (props) => {
             </Link>
         )
     })
-    if(props.projectMenu === true){
+    if (props.projectMenu === true) {
         opacity = 1
         right = '45px'
     }
     return (
         <div
             className={"project-menu-container display-flex border-radius"}
-            style={{position: "fixed", right: right, top: "85px", opacity: opacity}}
+            style={{position: "fixed", right: right, top: "74px", opacity: opacity}}
         >
             {projectsMenu}
-            <Link to={"/projects"} style={{ justifySelf: "flex-end", gridColumn: "4/4"}} className={"input-button"}>Voir plus -></Link>
+            <Link to={"/projects"} style={{justifySelf: "flex-end", gridColumn: "4/4"}} className={"input-button"}>Voir
+                plus -></Link>
         </div>
     )
 }

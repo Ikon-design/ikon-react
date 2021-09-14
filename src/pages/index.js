@@ -4,7 +4,7 @@ import "../style/reset.css"
 import "../style/main.css"
 import "../style/header.css"
 
-import Projects from "../components/projects";
+import Projects from "../components/projects/projects";
 import Layout from "../components/Layout";
 import Welcome from "../components/welcome";
 
@@ -15,6 +15,7 @@ const IndexPage = () => {
             <Layout>
                 <Projects/>
                 <Welcome />
+                <Projects />
             </Layout>
         </main>
     )
