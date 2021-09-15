@@ -3,6 +3,7 @@
     position: fixed;
     width: 100%;
     transition: .360s;
+    z-index: 50;
 }
 
 .header-container ul{
