@@ -1,0 +1,36 @@
+.welcome-main{
+    background-color: #262626;
+    height: 100vh;
+    padding-right: 0;
+}
+
+.logo-welcome{
+    width: 50%;
+}
+.welcome-left{
+    width: calc(50vw - 130px);
+}
+.welcome-left img, .welcome-left div{
+    padding-bottom: 50px;
+}
+.welcome-left p{
+    font-size: 1.5rem;
+}
+.first-text{
+    margin-bottom: 35px;
+}
+.welcome-button{
+    background-color: #5D38E5;
+    color: white;
+    font-family: "nunito", Arial, serif;
+    width: fit-content;
+    padding: 12px 26px;
+    border-radius: 8px;
+    letter-spacing: 0.4px;
+}
+.welcome-right{
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%, 80%;
+}
