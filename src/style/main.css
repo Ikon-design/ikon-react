@@ -34,7 +34,9 @@
     text-align: justify;
     text-justify: auto;
 }
-
+.text-align-center{
+    text-align: center;
+}
 .title-text {
     font-family: "montserrat", serif;
     font-weight: bold;
@@ -97,7 +99,12 @@
 .justify-content-space-between {
     justify-content: space-between;
 }
-
+.justify-content-space-around {
+    justify-content: space-around;
+}
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
 .justify-content-center {
     justify-content: center;
 }
@@ -194,5 +201,8 @@ textarea {
 
     .global-padding {
         padding: 15px 25px;
+    }
+    .content-margin{
+        padding: 0 25px;
     }
 }

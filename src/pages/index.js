@@ -7,6 +7,8 @@ import "../style/header.css"
 import Welcome from "../components/welcome";
 import Layout from "../components/layout";
 import Projects from "../components/projects";
+import Skills from "../components/skills";
+import Form from "../components/form";
 
 const IndexPage = () => {
     return (
@@ -14,7 +16,9 @@ const IndexPage = () => {
             <title>Ikō.n || Accueil</title>
             <Layout>
                 <Welcome />
+                <Skills />
                 <Projects />
+                <Form />
             </Layout>
         </main>
     )

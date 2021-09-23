@@ -33,6 +33,7 @@ const RightHeaderComponent = (props) => {
             case 2:
                 setColor2("#5D38E5")
                 setTextShadow2("0 0 3px rgba(118, 86, 239, .31)")
+                console.log(props.projectMenu)
                 props.setProjectMenu(true)
                 break;
             case 3:

@@ -34,3 +34,17 @@
     background-position: right;
     background-size: 70%, 80%;
 }
+@media screen and (max-width: 480px){
+    .logo-welcome{
+        display: none;
+    }
+    .welcome-left{
+        width: 100%;
+    }
+    .welcome-right{
+        display: none;
+    }
+    .content-text{
+        padding-right: 25px;
+    }
+}

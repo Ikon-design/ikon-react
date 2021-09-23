@@ -4,7 +4,7 @@ import "../mobileMenu/mobileMenu.css"
 import Header from "../header"
 
 export default function Layout({children}) {
-    const [projectMenu, setProjectMenu] = useState("false")
+    const [projectMenu, setProjectMenu] = useState(false)
     const [mobileMenu, setMobileMenu] = useState(false)
     const [position, setPosition] = useState("-820px")
     const [screenSize, setScreenSize] = useState(document.body.offsetWidth)

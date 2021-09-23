@@ -1,5 +1,5 @@
 .form-container {
-    height: 100vh;
+    height: calc(100vh - 75px);
     background-color: #3a3a3a;
 }
 

@@ -1,0 +1,27 @@
+.skills-container{
+    height: calc(100vh - 75px);
+    background-color: #313131;
+}
+
+.skills-img{
+    height: 125px;
+    width: 125px;
+    border-radius: 22px;
+    background-color: white;;
+}
+
+.skills-title{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: white;
+    font-family: "montserrat", serif;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.skills-item *{
+    margin-bottom: 15px;
+}
+.skills-item-description{
+    font-size: 1em;
+}
