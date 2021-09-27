@@ -63,7 +63,7 @@ const Skills = () => {
         setCurrentitem(skillsData[count])
     }
     return (
-        <div className={"skills-container display-flex flex-direction-column justify-content-space-evenly"}>
+        <div className={"skills-container content-margin display-flex flex-direction-column justify-content-space-between"}>
             <h2 style={{textAlign: "center"}} className={"title-text"}>Compétences</h2>
             <div className={"display-flex justify-content-space-around skills-item-container"}>
                 {screenSize < 480 ? <a style={{color: 'white'}} onClick={downCount}><img src={ArrowLeft}/></a> : null}

@@ -9,6 +9,7 @@ import Layout from "../components/layout";
 import Projects from "../components/projects";
 import Skills from "../components/skills";
 import Form from "../components/form";
+import Technos from "../components/technos";
 
 const IndexPage = () => {
     return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
             <Layout>
                 <Welcome />
                 <Skills />
+                <Technos />
                 <Projects />
                 <Form />
             </Layout>

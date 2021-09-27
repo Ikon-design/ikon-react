@@ -8,9 +8,9 @@ import BgFirst from '../../images/bgFirst.svg'
 
 const Welcome = () => {
     const backgroundImage = 'url(' + BgFirst + '),' + 'url(' + Bg + ')'
-    console.log(backgroundImage)
+
     return (
-        <div className={"welcome-main display-flex content-margin justify-content-space-between"}>
+        <div className={"welcome-main display-flex content-margin justify-content-space-evenly"}>
             <div className='display-flex flex-direction-column justify-content-center welcome-left'>
                 <img src={Logo} className={"logo-welcome"}/>
                 <div>
