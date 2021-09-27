@@ -1,9 +1,10 @@
 .project-menu-container{
+    display: none;
     transition: .75s;
     width: fit-content;
     background-color: #262626;
     box-shadow: 0 0 5px rgba(0, 0, 0, .5);
-    display: grid;
+    /*display: grid;*/
     column-gap: 25px;
     opacity: 0;
     row-gap: 15px;

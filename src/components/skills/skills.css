@@ -1,17 +1,19 @@
 .skills-container{
     height: calc(100vh - 75px);
     background-color: #313131;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
 .skills-img{
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     border-radius: 22px;
     background-color: white;;
 }
 
 .skills-title{
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-transform: uppercase;
     color: white;
     font-family: "montserrat", serif;
@@ -24,4 +26,16 @@
 }
 .skills-item-description{
     font-size: 1em;
+    padding: 0 32px;
+}
+
+.skills-item{
+    width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+}
+
+.skills-item-container{
+    height: 70%;
+    flex-wrap: wrap;
 }
